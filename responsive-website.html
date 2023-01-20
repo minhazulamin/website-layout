@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid orange;
+            max-width: 800px;
+            margin: 0 auto;
+            
+            
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .tiger img{
+           width: 100%;
+        }
+        .container-tow{
+            display: flex;
+        }
+        .splite img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px){
+            .container-tow{
+                flex-direction: column;
+            }
+            .container-tow{
+                width: 100%;
+            }
+        }
+    </style>         
+</head>
+<body>
+    <section>
+        <h1>my responsive website</h1>
+    </section>
+    <section class="tiger">
+        <h3>tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2>tow parts</h2>
+        <div class="container-tow">
+            <div class="split">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 
+        1. viewport meta tag
+        2. css relative unit
+        3. responsive image(fluid image)
+        4.body max-with and marign auto
+
+     -->
+</body>
+</html>
